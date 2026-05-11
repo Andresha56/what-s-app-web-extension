@@ -1,0 +1,1 @@
+export const BLUR_CLASS = "chatshield-blur"
