@@ -4,6 +4,10 @@ A privacy-focused Chrome extension for WhatsApp Web that helps protect chats fro
 
 ---
 
+<img width="970" height="856" alt="Screenshot 2026-05-14 125544" src="https://github.com/user-attachments/assets/d0007aec-b44b-44a0-aedd-421d3ba259f7" />
+
+---
+
 ## Features
 
 * Blur chat messages
