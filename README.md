@@ -3,6 +3,11 @@
 A privacy-focused Chrome extension for WhatsApp Web that helps protect chats from shoulder surfing by blurring sensitive content with configurable privacy controls.
 
 ---
+<img width="1915" height="958" alt="Screenshot 2026-05-15 123159" src="https://github.com/user-attachments/assets/4520d34d-0e96-4499-8f06-61acdfa78f42" />
+
+
+<img width="895" height="625" alt="Screenshot 2026-05-15 123519" src="https://github.com/user-attachments/assets/b469aefb-651f-4338-8ee5-9266c89e3ab9" />
+
 
 <img width="970" height="856" alt="Screenshot 2026-05-14 125544" src="https://github.com/user-attachments/assets/d0007aec-b44b-44a0-aedd-421d3ba259f7" />
 
@@ -15,6 +20,7 @@ A privacy-focused Chrome extension for WhatsApp Web that helps protect chats fro
 * Blur contact names
 * Blur avatars
 * Real-time privacy updates
+* visible on hover
 * Persistent user preferences
 * Lightweight and fast
 * Works directly on WhatsApp Web
