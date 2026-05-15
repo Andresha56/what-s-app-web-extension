@@ -1,33 +1,105 @@
-This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
+# ChatShield
 
-## Getting Started
+A privacy-focused Chrome extension for WhatsApp Web that helps protect chats from shoulder surfing by blurring sensitive content with configurable privacy controls.
 
-First, run the development server:
+---
+
+<img width="970" height="856" alt="Screenshot 2026-05-14 125544" src="https://github.com/user-attachments/assets/d0007aec-b44b-44a0-aedd-421d3ba259f7" />
+
+---
+
+## Features
+
+* Blur chat messages
+* Blur left panel message previews
+* Blur contact names
+* Blur avatars
+* Real-time privacy updates
+* Persistent user preferences
+* Lightweight and fast
+* Works directly on WhatsApp Web
+
+---
+
+## Tech Stack
+
+* React
+* TypeScript
+* Plasmo
+* Tailwind CSS
+* Chrome Extension APIs
+
+---
+
+## Installation
+
+### Clone Repository
 
 ```bash
-pnpm dev
-# or
+git clone https://github.com/Andresha56/what-s-app-web-extension.git
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start Development Server
+
+```bash
 npm run dev
 ```
 
-Open your browser and load the appropriate development build. For example, if you are developing for the chrome browser, using manifest v3, use: `build/chrome-mv3-dev`.
+---
 
-You can start editing the popup by modifying `popup.tsx`. It should auto-update as you make changes. To add an options page, simply add a `options.tsx` file to the root of the project, with a react component default exported. Likewise to add a content page, add a `content.ts` file to the root of the project, importing some module and do some logic, then reload the extension on your browser.
+## Load Extension in Chrome
 
-For further guidance, [visit our Documentation](https://docs.plasmo.com/)
+1. Open `chrome://extensions`
+2. Enable Developer Mode
+3. Click `Load unpacked`
+4. Select:
 
-## Making production build
-
-Run the following:
-
-```bash
-pnpm build
-# or
-npm run build
+```txt
+build/chrome-mv3-dev
 ```
 
-This should create a production bundle for your extension, ready to be zipped and published to the stores.
+---
 
-## Submit to the webstores
+## Folder Structure
 
-The easiest way to deploy your Plasmo extension is to use the built-in [bpp](https://bpp.browser.market) GitHub action. Prior to using this action however, make sure to build your extension and upload the first version to the store to establish the basic credentials. Then, simply follow [this setup instruction](https://docs.plasmo.com/framework/workflows/submit) and you should be on your way for automated submission!
+```txt
+src/
+├── contents/
+├── popup/
+├── shared/
+├── storage/
+└── styles/
+```
+
+---
+
+## Architecture Highlights
+
+* MutationObserver-based DOM updates
+* Settings-driven privacy engine
+* Persistent Chrome extension storage
+* Modular content script architecture
+* Centralized selector management
+* No polling-based DOM scanning
+
+---
+
+## Planned Features
+
+* Hover reveal
+* Smart privacy presets
+* Keyboard shortcuts
+* Auto blur on inactivity
+* Except active conversation mode
+
+---
+
+## License
+
+MIT
