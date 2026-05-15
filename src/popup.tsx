@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-import "~/src/styles/globals.css"
+import "../globals.css"
 
 import { DEFAULT_SETTINGS } from "~/src/storage/defaults"
 import {
@@ -15,6 +15,7 @@ type ToggleSettingKey =
   | "blurSidebarPreviews"
   | "blurNames"
   | "blurAvatars"
+  | "blurPhoneNumbers"
 
 function Popup() {
   const [settings, setSettings] =
@@ -42,12 +43,17 @@ function Popup() {
 
     await saveSettings(updatedSettings)
   }
-  console.log("Current settings:", settings)
+
   return (
     <main className="w-[340px] bg-zinc-950 p-4 text-white">
       <h1 className="text-lg font-semibold">
         ChatShield
       </h1>
+
+      <p className="mt-2 text-sm leading-snug text-zinc-400">
+        Privacy features stay off until enabled. 
+        Only enabled privacy controls are applied on WhatsApp Web.
+      </p>
 
       <div className="mt-4 flex flex-col gap-3">
         <Toggle
@@ -83,6 +89,14 @@ function Popup() {
           checked={settings.blurAvatars}
           onChange={() =>
             handleToggle("blurAvatars")
+          }
+        />
+
+        <Toggle
+          label="Blur Phone Numbers"
+          checked={settings.blurPhoneNumbers}
+          onChange={() =>
+            handleToggle("blurPhoneNumbers")
           }
         />
       </div>

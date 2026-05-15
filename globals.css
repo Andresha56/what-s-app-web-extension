@@ -10,7 +10,19 @@ body {
 margin: 0;
 font-family: Inter, sans-serif;
 }
-.chatshield-blur {
-filter: blur(6px);
+.chatshield-blur--messages,
+.chatshield-blur--sidebar-previews,
+.chatshield-blur--names,
+.chatshield-blur--avatars,
+.chatshield-blur--phone-numbers {
+filter: blur(8px);
 transition: filter 0.18s ease;
+}
+
+html.chatshield-hover-reveal .chatshield-blur--messages:hover,
+html.chatshield-hover-reveal .chatshield-blur--sidebar-previews:hover,
+html.chatshield-hover-reveal .chatshield-blur--names:hover,
+html.chatshield-hover-reveal .chatshield-blur--avatars:hover,
+html.chatshield-hover-reveal .chatshield-blur--phone-numbers:hover {
+filter: none;
 }

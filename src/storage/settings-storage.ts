@@ -5,16 +5,26 @@ import type { PrivacySettings } from "../shared/types/settings"
 
 const storage = new Storage()
 
-const SETTINGS_KEY = "privacy-settings"
+export const SETTINGS_KEY = "privacy-settings" as const
 
 export async function getSettings(): Promise<PrivacySettings> {
-const settings = await storage.get<PrivacySettings>(SETTINGS_KEY)
+  const stored = await storage.get<
+    Partial<PrivacySettings>
+  >(SETTINGS_KEY)
 
-return settings ?? DEFAULT_SETTINGS
+  if (!stored) {
+    return { ...DEFAULT_SETTINGS }
+  }
+
+  return { ...DEFAULT_SETTINGS, ...stored }
 }
 
 export async function saveSettings(
-settings: PrivacySettings
+  settings: PrivacySettings
 ): Promise<void> {
-await storage.set(SETTINGS_KEY, settings)
+  await storage.set(SETTINGS_KEY, settings)
+}
+
+export function getSettingsStorage(): Storage {
+  return storage
 }

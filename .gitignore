@@ -28,6 +28,8 @@ dist/
 
 # plasmo
 .plasmo
+.plasmo-verbose.log
 
 # typescript
 .tsbuildinfo
+

@@ -1,0 +1,44 @@
+﻿node.exe : npm warn Unknown env config "devdir". This will stop working in the next major version of npm. See `npm 
+help npmrc` for supported config options.
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm warn Unknow...config options.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+≡ƒƒí 0      | Running command: build
+≡ƒƒú Plasmo v0.90.5
+≡ƒö┤ The Browser Extension Framework
+≡ƒö╡ INFO   | Prepare to bundle the extension...
+≡ƒö╡ INFO   | Building for target: chrome-mv3
+≡ƒƒí 1      | Creating Manifest Factory...
+≡ƒƒí 2      | Ensure exists: C:\Users\dell\react-web-extension\chatshield\.plasmo
+≡ƒƒí 3      | C:\Users\dell\react-web-extension\chatshield\assets\icon.png found, creating resized icons
+≡ƒƒí 4      | Creating static templates for popup
+≡ƒƒí 5      | Creating static templates for options
+≡ƒƒí 6      | Creating static templates for newtab
+≡ƒƒí 7      | Creating static templates for devtools
+≡ƒƒí 8      | Creating static templates for sidepanel
+≡ƒƒí 9      | Parsed config: { matches: [ 'https://web.whatsapp.com/*' ] }
+≡ƒƒí 10     | Adding content script:  C:\Users\dell\react-web-extension\chatshield\src\contents\whatsapp.ts
+≡ƒƒí 11     | Adding content script:  C:\Users\dell\react-web-extension\chatshield\src\contents\whatsapp\index.ts
+≡ƒƒí 12     | {
+  messageHandlerList: [],
+  externalMessageHandlerList: [],
+  portHandlerList: []
+}
+≡ƒƒí 13     | Hash changed, updating manifest
+≡ƒö╡ INFO   | Loaded environment variables from: []
+≡ƒƒí 0      | @plasmohq/parcel-transformer-manifest
+≡ƒƒí 1      | Adding icons
+≡ƒƒí 2      | Adding default_icon
+≡ƒƒí 3      | + Finished transforming manifest
+≡ƒƒí 0      | @plasmohq/parcel-bundler
+≡ƒƒí 0      | @plasmohq/parcel-packager
+≡ƒƒí 0      | @plasmohq/parcel-optimizer-encapsulate whatsapp.d59f9a7a.js whatsapp.[hash].js
+≡ƒƒí 0      | @plasmohq/optimizer-es:  whatsapp.d59f9a7a.js whatsapp.[hash].js C:\Users\dell\react-web-extension\chatshield
+≡ƒƒí 1      | optimizer-es: use SWC for whatsapp.[hash].js
+≡ƒƒí 0      | @plasmohq/parcel-optimizer-encapsulate whatsapp.4f949811.js whatsapp.[hash].js
+≡ƒƒí 0      | @plasmohq/optimizer-es:  whatsapp.4f949811.js whatsapp.[hash].js C:\Users\dell\react-web-extension\chatshield
+≡ƒƒí 1      | optimizer-es: use SWC for whatsapp.[hash].js
+≡ƒƒó DONE   | Finished in 3237ms!

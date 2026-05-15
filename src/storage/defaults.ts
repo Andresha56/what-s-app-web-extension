@@ -1,10 +1,14 @@
 import type { PrivacySettings } from "../shared/types/settings"
 
+/**
+ * Blur toggles default off: nothing is obscured until the user opts in via the popup.
+ */
 export const DEFAULT_SETTINGS: Readonly<PrivacySettings> = {
-blurMessages: true,
-blurSidebarPreviews: true,
-blurNames: false,
-blurAvatars: false,
-hoverReveal: true,
-excludeActiveConversation: false
+  blurMessages: false,
+  blurSidebarPreviews: false,
+  blurNames: false,
+  blurAvatars: false,
+  blurPhoneNumbers: false,
+  hoverReveal: true,
+  excludeActiveConversation: false
 }
